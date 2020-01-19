@@ -5,5 +5,6 @@ RUN yum install -y httpd
 EXPOSE 8080
 ENV LogLevel "info"
 COPY httpd.conf /etc/httpd/conf/
+COPY . /var/www/html/
 ENTRYPOINT ["/usr/sbin/httpd"]
 CMD ["-D", "FOREGROUND"]

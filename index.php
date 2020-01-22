@@ -98,7 +98,7 @@
       </div><!-- /row -->
     </div><!-- /container -->
     <script>
-      // Initialize Datatables
+      // Initialize Datatables again
       $(document).ready( function() {
         $('.datatable').dataTable();
       });
